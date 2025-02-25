@@ -3,12 +3,12 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import Vid from '../assets/0001.mp4'
 import img1 from '../assets/img13.jpg'
 import img2 from '../assets/img5.jpg'
 import img3 from '../assets/img2.jpg'
-import img4 from '../assets/img7.jpg'
+import img4 from '../assets/img14.jpg'
 import img5 from '../assets/img8.jpg'
+import img6 from '../assets/roundbed.jpg'
 
 
 const images = [
@@ -19,6 +19,10 @@ const images = [
   {
     id: 2,
     img: img2,
+  },
+  {
+    id: 6,
+    img: img6,
   },
   {
     id: 3,
@@ -58,13 +62,7 @@ const BackgroundVideo = () => {
     data-aos-mirror="true"
     className="relative w-full pt-[225px] pb-[254px] lg:bg-center overflow-hidden">
         <div className='absolute top-0 left-0 w-full h-full   '>
-      {/* <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[80%] object-cover z-0"
-      >
-        <source src={Vid} type="video/mp4"/> */}
+      
         <Slider {... settings}>
           {images.map((image) => (
             <div key={image.id} >
@@ -75,12 +73,7 @@ const BackgroundVideo = () => {
               />
             </div>
           ))}
-        </Slider>
-        {/* {
-          
-        } */}
-        {/* <img src={img1} alt="Background" className="w-full h-full object-cover" /> */}
-      {/* </video> */}
+        </Slider>   
       </div>
       {/* Content Over the Video */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">

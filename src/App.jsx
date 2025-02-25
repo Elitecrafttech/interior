@@ -2,6 +2,11 @@ import React from 'react'
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Hero from './components/Hero'
+import Items from './components/Items';
+import Roomset from './components/Roomset';
+import Moreitems from './components/Moreitems';
+import About from './components/About';
+
 
 function App() {
     React.useEffect(()=>{
@@ -16,6 +21,10 @@ function App() {
   return (
     <div>
       <Hero />
+      <Items />
+      <Roomset />
+      <Moreitems />
+      <About />
     </div>
    
   )
