@@ -10,11 +10,6 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-// import img1 from '../assets/img13.jpg'
-// import img2 from '../assets/img5.jpg'
-// import img3 from '../assets/img2.jpg'
-// import img4 from '../assets/img14.jpg'
-// import img5 from '../assets/img8.jpg'
 
 import img1 from '../assets/img12.jpg'
 import img2 from '../assets/img9.jpg'
@@ -92,7 +87,7 @@ export default function App() {
             <img 
               src={image.img} 
               alt="" 
-              className="h-[300px] w-[400px] object-cover rounded-tr-xl rounded-tl-xl" // Adjust size as needed
+              className="h-[300px] w-[400px] object-cover rounded-tr-xl rounded-tl-xl"
             />
             <h1 className='border-[1px] border-t-0 border-emerald-600 p-[13px] font-extrabold text-[15px] rounded-br-xl rounded-bl-xl text-start'>{image.title}</h1>
           </SwiperSlide>

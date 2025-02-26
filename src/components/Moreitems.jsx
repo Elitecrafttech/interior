@@ -62,9 +62,8 @@ const Roomset = () => {
     <div className='py-10 mb-10'>
       <div className='container'>
         <div className='text-center mb-10 max-w-[600px] mx-auto'>
-          <p data-aos="fade-up" className='text-sm text-primary'>Explore More About Roomset</p>
-          <h1 data-aos="fade-up" className='text-3xl font-bold'>Room Set</h1>
-          <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptate consequuntur ad?</p>
+          <p data-aos="fade-up" className='text-sm text-primary'>More Suitable Design For Your Taste</p>
+          <h1 data-aos="fade-up" className='text-3xl font-bold'>More Items In Store</h1>
         </div>
         <div data-aos="zoom-in">
           <Slider {...settings}>

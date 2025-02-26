@@ -62,6 +62,7 @@ const BackgroundVideo = () => {
     data-aos-mirror="true"
     className="relative w-full pt-[225px] pb-[254px] lg:bg-center overflow-hidden">
         <div className='absolute top-0 left-0 w-full h-full   '>
+        <div className="overlay"></div>
       
         <Slider {... settings}>
           {images.map((image) => (
@@ -75,28 +76,22 @@ const BackgroundVideo = () => {
           ))}
         </Slider>   
       </div>
-      {/* Content Over the Video */}
+      {/* Content Over the sliding images */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">
-         <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[44px] lg:leading-tight lg:max-w-[888px]'
+         <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[44px] lg:leading-tight lg:max-w-[888px] text-shadow'
          data-aos="zoom-in-up"
          data-aos-duration="3000"
          data-aos-delay="1000"
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
          >Creative Home Simplify Your Living Space with Best Furniture</h1>
-        <h2 className='text-[15px] w-[80vw] mb-[30px] lg:max-w-[627px] mx-auto lg:mb-[65px] lg:text-xl'
+        <h2 className='text-[15px] w-[80vw] mb-[30px] lg:max-w-[627px] mx-auto lg:mb-[65px] lg:text-xl text-shadow'
         data-aos="flip-up"
         data-aos-duration="3000"
         data-aos-delay="2000"
         data-aos-easing="ease-in-out-sine"
         data-aos-mirror="true"
         >At BRAHMS_INTERIOR, we specialize in crafting high-quality, stylish furniture that enhances the beauty and functionality of your home. With a focus on timeless design and exceptional craftsmanship, we offer customized solutions that suit every taste and space, ensuring your interiors are both elegant and practical.</h2>
-        {/* <a
-          href="#"
-          className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600"
-        >
-          Learn More
-        </a> */}
         <button
         data-aos="flip-left"
         data-aos-duration="3000"
