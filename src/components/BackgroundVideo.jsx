@@ -78,7 +78,7 @@ const BackgroundVideo = () => {
       </div>
       {/* Content Over the sliding images */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">
-         <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[44px] lg:leading-tight lg:max-w-[888px] text-shadow'
+         <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[40px] lg:leading-tight lg:max-w-[888px] text-shadow'
          data-aos="zoom-in-up"
          data-aos-duration="3000"
          data-aos-delay="1000"
@@ -93,11 +93,11 @@ const BackgroundVideo = () => {
         data-aos-mirror="true"
         >At BRAHMS_INTERIOR, we specialize in crafting high-quality, stylish furniture that enhances the beauty and functionality of your home. With a focus on timeless design and exceptional craftsmanship, we offer customized solutions that suit every taste and space, ensuring your interiors are both elegant and practical.</h2>
         <button
-        data-aos="flip-left"
-        data-aos-duration="3000"
-        data-aos-delay="2000"
-        data-aos-easing="ease-out-cubic"
-        data-aos-mirror="true"
+        // data-aos="fade-up"
+        // data-aos-duration="3000"
+        // data-aos-delay="2000"
+        // data-aos-easing="ease-out-cubic"
+        // data-aos-mirror="true"
          className='bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-xl rounded-md backdrop-blur-md transition lg:px-[80px]'>Shop Now</button>
       </div>
       
