@@ -9,6 +9,7 @@ import img3 from '../assets/img2.jpg'
 import img4 from '../assets/img14.jpg'
 import img5 from '../assets/img8.jpg'
 import img6 from '../assets/roundbed.jpg'
+import logo from '../assets/logo.jpg'
 
 
 const images = [
@@ -78,6 +79,9 @@ const BackgroundVideo = () => {
       </div>
       {/* Content Over the sliding images */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">
+      <div className='flex justify-center pt-[25px]'>
+      <img src={logo} alt="" className='h-[150px] lg:w-[270px] w-[100%] rounded-md'/>
+      </div>
          <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[40px] lg:leading-tight lg:max-w-[888px] text-shadow'
          data-aos="zoom-in-up"
          data-aos-duration="3000"
@@ -85,20 +89,14 @@ const BackgroundVideo = () => {
          data-aos-easing="ease-in-out-sine"
          data-aos-mirror="true"
          >Creative Home Simplify Your Living Space with Best Furniture</h1>
-        <h2 className='text-[15px] w-[80vw] mb-[30px] lg:max-w-[627px] mx-auto lg:mb-[65px] lg:text-xl text-shadow'
+        <h2 className='text-[15px] w-[80vw] mb-[30px] lg:max-w-[800px] mx-auto lg:mb-[65px] lg:text-xl text-shadow'
         data-aos="flip-up"
         data-aos-duration="3000"
         data-aos-delay="2000"
         data-aos-easing="ease-in-out-sine"
         data-aos-mirror="true"
         >At BRAHMS_INTERIOR, we specialize in crafting high-quality, stylish furniture that enhances the beauty and functionality of your home. With a focus on timeless design and exceptional craftsmanship, we offer customized solutions that suit every taste and space, ensuring your interiors are both elegant and practical.</h2>
-        <button
-        // data-aos="fade-up"
-        // data-aos-duration="3000"
-        // data-aos-delay="2000"
-        // data-aos-easing="ease-out-cubic"
-        // data-aos-mirror="true"
-         className='bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-xl rounded-md backdrop-blur-md transition lg:px-[80px]'>Shop Now</button>
+       
       </div>
       
     </div>
