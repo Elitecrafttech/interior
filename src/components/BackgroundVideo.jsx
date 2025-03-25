@@ -3,13 +3,13 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import img1 from '../assets/img13.jpg'
-import img2 from '../assets/img5.jpg'
-import img3 from '../assets/img2.jpg'
-import img4 from '../assets/img14.jpg'
-import img5 from '../assets/img8.jpg'
-import img6 from '../assets/roundbed.jpg'
-import logo from '../assets/logo.jpg'
+import img1 from '../assets/img13.webp'
+import img2 from '../assets/img5.webp'
+import img3 from '../assets/img2.webp'
+import img4 from '../assets/img14.webp'
+import img5 from '../assets/img8.webp'
+import img6 from '../assets/roundbed.webp'
+import logo from '../assets/logo.webp'
 
 
 const images = [

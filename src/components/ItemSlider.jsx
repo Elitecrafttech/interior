@@ -11,13 +11,13 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
-import img1 from '../assets/img12.jpg'
-import img2 from '../assets/img9.jpg'
-import img3 from '../assets/sofa.jpeg'
-import img4 from '../assets/murphybed.jpg'
-import img5 from '../assets/img7.jpg'
-import img6 from '../assets/Storagebed.jpg'
-import img7 from '../assets/table.jpg'
+import img1 from '../assets/img12.webp'
+import img2 from '../assets/img9.webp'
+import img3 from '../assets/sofa.webp'
+import img4 from '../assets/murphybed.webp'
+import img5 from '../assets/img7.webp'
+import img6 from '../assets/Storagebed.webp'
+import img7 from '../assets/table.webp'
 
 const images = [
   {

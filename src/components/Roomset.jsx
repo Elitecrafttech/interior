@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Vid from '../assets/01c.mp4'
-import Vid2 from '../assets/002.mp4'
-import Vid3 from '../assets/0003.mp4'
+import Vid from '../assets/01c.webm'
+import Vid2 from '../assets/002.webm'
+import Vid3 from '../assets/0003.webm'
 
-import img1 from '../assets/img12.jpg'
-import img2 from '../assets/img9.jpg'
-import img3 from '../assets/sofa.jpeg'
-import img4 from '../assets/murphybed.jpg'
-import img5 from '../assets/img1.jpg'
+import img1 from '../assets/img12.webp'
+import img2 from '../assets/img9.webp'
+import img3 from '../assets/sofa.webp'
+import img4 from '../assets/murphybed.webp'
+import img5 from '../assets/img1.webp'
 
 const roomset = [
   { id: 1, img: img4, title: "Bed Room" },
@@ -34,6 +34,8 @@ const Roomset = () => {
                         autoPlay
                         loop
                         muted
+                        loading="lazy"
+                        preload="metadata"
                     className='lg:h-[250px] lg:w-[250px] object-cover z-0 rounded-xl h-60'>
                         <source src={Vid2} type="video/mp4"/>
                         <img src={img1} alt="Background" 
@@ -49,6 +51,8 @@ const Roomset = () => {
                     autoPlay
                     loop
                     muted
+                    loading="lazy"
+                    preload="metadata"
                className='lg:h-[250px] lg:w-[250px] object-cover z-0 rounded-xl  h-60'
                 >
                     <source src={Vid} type="video/mp4"/>
@@ -76,7 +80,7 @@ const Roomset = () => {
             key={room.id} className="relative rounded-xl overflow-hidden shadow-lg">
               {room.img && <img src={room.img} alt={room.title} className="w-full h-60 object-cover " />}
                 {room.video && (
-                <video controls autoPlay loop muted className="w-full h-60 object-cover">
+                <video controls autoPlay loop muted loading="lazy" preload="metadata" className="w-full h-60 object-cover">
                     <source src={room.video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

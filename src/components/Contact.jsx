@@ -6,7 +6,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaFacebookMessenger } from "react-icons/fa6";
 import { SiFacebook } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.webp'
 
 
 // Footer with social media Icons
@@ -16,7 +16,7 @@ const Contact = () => {
         <div className='flex flex-col lg:flex-row lg:justify-between items-center gap-[40px]'>
            <div className='flex flex-col items-center'>
            <a data-aos="fade-up" className='font-extrabold text-[18px]' href="#">BRAHMS_INTERIOR</a>
-           <img src={logo} alt="" className='h-[100px] w-[190px]'/>
+           <img src={logo} loading="lazy" alt="logo" className='h-[100px] w-[190px]'/>
            </div>
             <div className='flex gap-[15px]'>
               <div data-aos="fade-up"><PiWhatsappLogoDuotone className='text-[25px] cursor-pointer'/></div>
