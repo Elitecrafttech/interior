@@ -38,7 +38,7 @@ const Roomset = () => {
                         preload="metadata"
                     className='lg:h-[250px] lg:w-[250px] object-cover z-0 rounded-xl h-60'>
                         <source src={Vid2} type="video/mp4"/>
-                        <img src={img1} alt="Background" 
+                        <img src={img1} loading="lazy" alt="Background" className='h-[250px] rounded-xl'
                         />
                     </video>
                     <div className='relative bottom-[38px] left-[10px] w-[78px] bg-white px-3 py-1 rounded-md shadow'>
@@ -56,7 +56,7 @@ const Roomset = () => {
                className='lg:h-[250px] lg:w-[250px] object-cover z-0 rounded-xl  h-60'
                 >
                     <source src={Vid} type="video/mp4"/>
-                    <img src={img1} alt="Background" 
+                    <img src={img2} loading="lazy" alt="Background" className='h-[250px] rounded-xl'
                     />
                 </video>
 
@@ -66,8 +66,8 @@ const Roomset = () => {
                 </div>
             </div>
             <div className='flex flex-col gap-[5px] items-center'>
-                <img data-aos="fade-up" src={img5} alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl object-cover'/>
-                <img data-aos="fade-up" src={img1} alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl'/>
+                <img data-aos="fade-up" src={img5} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl object-cover'/>
+                <img data-aos="fade-up" src={img1} loading="lazy" alt="" className='h-[200px] lg:h-[125px] w-[350px] rounded-xl'/>
                 
             </div>
         </div>
@@ -78,7 +78,7 @@ const Roomset = () => {
             data-aos="fade-up"
             data-aos-delay={room.aosDelay}
             key={room.id} className="relative rounded-xl overflow-hidden shadow-lg">
-              {room.img && <img src={room.img} alt={room.title} className="w-full h-60 object-cover " />}
+              {room.img && <img src={room.img} loading="lazy" alt={room.title} className="w-full h-60 object-cover " />}
                 {room.video && (
                 <video controls autoPlay loop muted loading="lazy" preload="metadata" className="w-full h-60 object-cover">
                     <source src={room.video} type="video/mp4" />

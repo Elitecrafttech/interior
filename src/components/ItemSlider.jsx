@@ -86,7 +86,8 @@ export default function App() {
           <SwiperSlide key={image.id} className="flex justify-center items-center pb-[5px]">
             <img 
               src={image.img} 
-              alt="" 
+              loading="lazy"
+              alt="items photos" 
               className="h-[300px] w-[400px] object-cover rounded-tr-xl rounded-tl-xl"
             />
             <h1 className='border-[1px] border-t-0 border-emerald-600 p-[13px] font-extrabold text-[15px] rounded-br-xl rounded-bl-xl text-start'>{image.title}</h1>

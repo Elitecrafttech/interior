@@ -1,9 +1,5 @@
 import React from 'react'
-import { PiWhatsappLogoDuotone } from "react-icons/pi";
 import { TiSocialInstagram } from "react-icons/ti";
-import { FaPinterest } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import { FaFacebookMessenger } from "react-icons/fa6";
 import { SiFacebook } from "react-icons/si";
 import { AiFillTikTok } from "react-icons/ai";
 import logo from '../assets/logo.webp'
@@ -19,13 +15,9 @@ const Contact = () => {
            <img src={logo} loading="lazy" alt="logo" className='h-[100px] w-[190px]'/>
            </div>
             <div className='flex gap-[15px]'>
-              <div data-aos="fade-up"><PiWhatsappLogoDuotone className='text-[25px] cursor-pointer'/></div>
               <div data-aos="fade-up"><TiSocialInstagram className='text-[25px] cursor-pointer'  onClick={() => window.open('https://www.instagram.com/brahms_interior_design?igsh=ZWExNGU3dWVtZTc1&utm_source=qr', '_blank')}/></div>
               <div data-aos="fade-up"><AiFillTikTok className='text-[25px] cursor-pointer' onClick={() => window.open('https://www.tiktok.com/@brahms_interior2?_t=ZM-8utbgq67xpO&_r=1', '_blank')}/></div>
-              <div data-aos="fade-up"><BsTwitterX className='text-[25px] cursor-pointer'/></div>
-              <div data-aos="fade-up"><FaPinterest className='text-[23px] cursor-pointer'/></div>
-              <div data-aos="fade-up"><FaFacebookMessenger className='text-[25px] cursor-pointer'/></div>
-              <div data-aos="fade-up"><SiFacebook className='text-[25px] cursor-pointer'/></div>
+              <div data-aos="fade-up"><SiFacebook className='text-[25px] cursor-pointer' onClick={() => window.open('https://www.facebook.com/profile.php?id=100093480852026&mibextid=wwXIfr&mibextid=wwXIfr', '_blank')}/></div>
               
             </div>
         </div>

@@ -71,7 +71,7 @@ const Roomset = () => {
               <div key={data.id} className='my-6 px-4'>
                 <div className='flex flex-col gap-4 shadow-lg rounded-xl dark:bg-gray-800'>
                   <div>
-                    <img src={data.img} alt={data.title} className='rounded-t-xl w-full h-[200px] object-cover'/>
+                    <img src={data.img} loading="lazy" alt={data.title} className='rounded-t-xl w-full h-[200px] object-cover'/>
                   </div>
                   <div className='flex flex-col items-center gap-4'>
                     <h1 className='text-xl font-bold text-black/80 dark:text-white'>{data.title}</h1>

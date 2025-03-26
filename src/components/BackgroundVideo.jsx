@@ -80,7 +80,7 @@ const BackgroundVideo = () => {
       {/* Content Over the sliding images */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 mx-auto">
       <div className='flex justify-center pt-[25px]'>
-      <img src={logo} alt="" className='h-[150px] lg:w-[270px] w-[100%] rounded-md'/>
+      <img src={logo} loading="eager" alt="Hero Background" className='h-[150px] lg:w-[270px] w-[100%] rounded-md'/>
       </div>
          <h1 className='text-xl mx-auto font-bold lg:font-semibold mb-[30px] lg:text-[40px] lg:leading-tight lg:max-w-[888px] text-shadow'
          data-aos="zoom-in-up"

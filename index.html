@@ -20,20 +20,26 @@
     <meta property="og:image" content="https://www.brahmsinterior.com/images/featured-image.webp" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./public/logo.webp" />
+    <link rel="icon" type="image/svg+xml" href="logo.webp" />
+
+    <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Preloading Critical Assets -->
-    <link rel="preload" as="image" href="./public/logo.webp">
-
-    
+    <link rel="preload" as="image" href="./src/assets/logo.webp">
+  
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- 🔹 Load Heavy Script with defer (Best for performance) -->
+    <!-- Load Heavy Script with defer -->
     <script src="/heavy-script.js" defer></script>
 
-    <!-- 🔹 Load React/Vite App -->
+    <script async src="analytics.js"></script>
+
+    <!-- Load React/Vite App -->
     <script type="module" src="/src/main.jsx"></script>
+    
   </body>
 </html>

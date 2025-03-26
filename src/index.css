@@ -48,23 +48,22 @@
 
   /* Custom CSS for Swiper pagination bullets */
 .mySwiper .swiper-pagination-bullet {
-    width: 5px; 
-    height: 5px; 
+    width: 6px; 
+    height: 6px; 
     background-color: #16a34a; 
     opacity: 1; 
-    border-radius: 50%; 
-
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
   }
   
   .mySwiper .swiper-pagination-bullet-active {
-    background-color: transparent; /* Active dot color */
+    background-color: #0f9d58;
   }
   
   .abt{
     background-image: url(/src/assets/about.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
   }
 
   .overlay {
@@ -87,10 +86,11 @@
   padding-right: 1rem; 
 }
 @keyframes dots {
-  0% { opacity: 0; }
-  33% { opacity: 1; }
-  66% { opacity: 0; }
+  0% { transform: scale(0.8); opacity: 0.3; }
+  33% { transform: scale(1); opacity: 1; }
+  66% { transform: scale(0.8); opacity: 0.3; }
 }
+
 
 .dot-animation {
   animation: dots 1.5s infinite;

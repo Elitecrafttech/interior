@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import logo from '../src/assets/logo.webp'
 
 // Only lazy-load components **below the fold**
 const Items = lazy(() => import("./components/Items"));
@@ -27,11 +28,12 @@ function App() {
 
       <Suspense
         fallback={
-          <div className="flex justify-center items-center text-amber-900 font-extrabold text-[30px]">
-            Loading
+          <div className="flex flex-col items-center text-amber-900 font-extrabold text-[30px] relative bottom-[370px]">
+            <div><img src={logo} loading="lazy" alt="loading logo" className='h-[100px] lg:w-[160px] w-[100%] rounded-md'/></div>
+            <div>Loading
             <span className="dot-animation">.</span>
             <span className="dot-animation">.</span>
-            <span className="dot-animation">.</span>
+            <span className="dot-animation">.</span></div>
           </div> }>
 
         <Items />
