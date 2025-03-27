@@ -8,6 +8,16 @@ const About = () => {
   return (
     <div>
         <div data-aos="fade-up" className='abt'>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d63134.2967573031!2d4.5121294!3d8.5097162!3m2!1i1024!2i768!4f13.1!2m1!1sNo%2063%20Taiwo%20yidi%20road%20ilorin%20kwara%20state!5e0!3m2!1sen!2sng!4v1743063032670!5m2!1sen!2sng"
+        width="100%" 
+        height="450" 
+        style={{border: 0, minHeight: '450px'}} 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        ></iframe>
+
             <div className='flex lg:flex-row-reverse lg:justify-between flex-col'>
                 <div className='flex flex-col items-center'>
                 <img data-aos="fade-up" src={img} loading="lazy" alt="showcase" className='lg:min-h-full min-h-[500px] lg:w-[500px] w-full'/>
